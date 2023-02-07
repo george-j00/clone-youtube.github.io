@@ -1,8 +1,11 @@
 @import "../_fonts/fonts.css";
-
+*{
+    box-sizing: border-box;
+}
 body {
-    font-family: 'Roboto', sans-serif;
-    /* background-color: #f1f1f1 !important; */
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 10px;
+
 }
 
 a {
@@ -65,24 +68,27 @@ nav input:focus {
     position: fixed;
     height: 100%;
     left: 0;
-    top: 50px;
+    top: 46px;
     background-color: #fff;
     overflow-y: auto;
     padding-top: 20px;
     padding-bottom: 50px;
+    margin-left: 5px;
 }
 
 .sidebar .nav-link span {
     padding: 0 22px;
     vertical-align: bottom;
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .sidebar .nav-item {
-    border-radius: 5px;
+    border-radius: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    
 }
 
 .sidebar h6 {
@@ -97,11 +103,12 @@ nav input:focus {
     background-color: #F2F2F2;
 }
 
-.sidebar a {
-    padding-top: 0;
-    padding-bottom: 7px;
-    margin-bottom: 3px;
-}
+/* .sidebar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} */
 
 .side-sign span {
     font-size: 14px;
@@ -129,21 +136,27 @@ nav input:focus {
 .small-sidebar {
     width: 80px;
 }
-
+.small-sidebar .nav-item a{
+    padding: 15px;
+}
 .small-sidebar .icon {
     width: 24px;
     height: 24px;
-    margin-top: 15px;
+    
 }
 
 .small-sidebar main {
     display: none;
 }
+/* .sidebar .nav-item{
+ 
+} */
 
 /*scrollbar*/
 *::-webkit-scrollbar {
     width: 16px;
     height: 10px;
+    
 }
 
 *::-webkit-scrollbar-track {
@@ -156,6 +169,7 @@ nav input:focus {
     border: 4px solid transparent;
     background-clip: content-box;
     background-color: #888;
+    
 }
 
 *::-webkit-scrollbar-thumb:hover {
@@ -166,6 +180,7 @@ nav input:focus {
 .page-content {
     margin-left: 250px;
     position: relative;
+    
 }
 
 .page-content hr {
@@ -177,11 +192,15 @@ nav input:focus {
 }
 
 /*Carousel*/
+.carousels{
+    position: sticky;
+    top: 46px;
+    z-index: 999;
+}
 .carousel-container {
     background-color: #fff;
     padding: 10px 15px;
-    position:fixed;
-
+    
 }
 
 .carousel-container .category-item {
@@ -216,9 +235,11 @@ nav input:focus {
     border-radius: 50%;
 
 }
-.video-thumb{
+
+.video-thumb {
     border-radius: 15px;
 }
+
 .card-video-detail h4 {
     font-size: 16px;
     font-weight: bold;
@@ -243,21 +264,61 @@ nav input:focus {
     color: black;
 }
 
+.video-footer-item {
+    background-color: #F2F2F2;
+    font-size: 14px;
+    color: #212529;
+    margin-top: 10px;
+    padding: 8px 30px;
+    border-radius: 18px;
+}
+
 /*shorts*/
-.shorts-header img{
+.shorts-header img {
     width: 30px;
     height: 30px;
 }
-.shorts-header span{
+
+.shorts-header span {
     color: black;
     font-size: 18px;
     font-weight: bold;
 }
+
 .shorts-container h6 {
     font-size: 14px;
     font-weight: bold;
     color: black;
 }
+.shorts-wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+/* 
+@media screen and (max-width: 1629px) {
+    .shorts-container .shorts-item {
+        width: 14%;
+    }
+}
+@media screen and (max-width: 1615px) {
+    .shorts-container .shorts-item {
+        width: 16.6%;
+    }
+}
+@media screen and (max-width: 1123px) {
+    .shorts-container .shorts-item {
+        width: 20%;
+    }
+}
+@media screen and (max-width: 1111px) {
+    .shorts-container .shorts-item {
+        width: 25%;
+    }
+} */
 
 .shorts-container img {
     border-radius: 10px;
@@ -267,7 +328,10 @@ nav input:focus {
     font-size: 13px;
     color: gray;
 }
-
+.arrow{
+    display: block;
+    width: 100%;
+}
 .arrow i {
     width: 100%;
     padding: 10px;
@@ -278,7 +342,10 @@ nav input:focus {
     cursor: pointer;
     background-color: #E0E0E0;
 }
+.down{
+    display: flex;
 
+}
 .down div {
     display: none;
 }
@@ -286,17 +353,131 @@ nav input:focus {
 .show div {
     display: inline;
 }
-.zoom{
-    transition: transform all .3s; /* Animation */
-    transition-delay: .7s;
+
+.zoom {
+    transition: .3s;
+    /* Animation */
+    /* transition-delay: .7s; */
     border-radius: 15px;
-    
+
 
 }
+
 .zoom:hover {
-    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    position: relative;
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     z-index: 999;
-    background-color:#fff;
+    background-color: #fff;
+
+
+}
+
+.zoom:hover::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: calc(100% + 40px);
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  
-  }
+    border-radius: 14px;
+
+}
+    
+.zoom:hover a {
+    z-index: 2;
+}
+.video-footer {
+    display: none;
+
+}
+
+.zoom:hover .video-footer {
+    /* padding: 10px; */
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    z-index: 3;
+    width: 100%;
+
+}
+
+.zoom:hover .main-img {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+
+.video-footer-item:first-child {
+    text-align: center;
+
+}
+.navigator {
+    width: 100%;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 9999;
+}
+@media screen and (max-width: 1705px) {
+    .zoom:hover::after {
+        height: calc(100% + 90px);
+
+    }
+    .video-footer-item{
+        padding: 8px 15px;
+    }
+    .zoom:hover .video-footer{
+        display: block;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .sidebar{
+        display: none;
+    }
+    .page-content{
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+    .video-thumb {
+        border-radius: 0;
+        width: 100%;
+    }
+    .zoom{
+        width: 100%;
+    }
+    .navigator{
+        display: block;
+    }
+    .shorts-wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .shorts-wrapper .down{
+        display: none;
+    }
+    .menu-icon{
+        display: none;
+    }
+    nav div:first-child{
+        padding: 0 !important;
+        margin-left: -10px;
+    }
+    .zoom{
+        pointer-events: none;
+    }
+    .carousels{
+        top: 41px;
+    }
+}
