@@ -1,4 +1,4 @@
-@import "../_fonts/fonts.css";
+/* @import "../_fonts/fonts.css"; */
 *{
     box-sizing: border-box;
 }
@@ -103,12 +103,7 @@ nav input:focus {
     background-color: #F2F2F2;
 }
 
-/* .sidebar a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-} */
+
 
 .side-sign span {
     font-size: 14px;
@@ -298,28 +293,6 @@ nav input:focus {
     
 }
 
-/* 
-@media screen and (max-width: 1629px) {
-    .shorts-container .shorts-item {
-        width: 14%;
-    }
-}
-@media screen and (max-width: 1615px) {
-    .shorts-container .shorts-item {
-        width: 16.6%;
-    }
-}
-@media screen and (max-width: 1123px) {
-    .shorts-container .shorts-item {
-        width: 20%;
-    }
-}
-@media screen and (max-width: 1111px) {
-    .shorts-container .shorts-item {
-        width: 25%;
-    }
-} */
-
 .shorts-container img {
     border-radius: 10px;
 }
@@ -353,64 +326,14 @@ nav input:focus {
 .show div {
     display: inline;
 }
-
 .zoom {
     transition: .3s;
-    /* Animation */
-    /* transition-delay: .7s; */
+    
     border-radius: 15px;
 
 
 }
 
-.zoom:hover {
-    position: relative;
-    transform: scale(1.1);
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    z-index: 999;
-    background-color: #fff;
-
-
-}
-
-.zoom:hover::after {
-    content: '';
-    position: absolute;
-    background-color: #fff;
-    top: 0;
-    left: 0px;
-    width: 100%;
-    height: calc(100% + 40px);
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    border-radius: 14px;
-
-}
-    
-.zoom:hover a {
-    z-index: 2;
-}
-.video-footer {
-    display: none;
-
-}
-
-.zoom:hover .video-footer {
-    /* padding: 10px; */
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: auto;
-    z-index: 3;
-    width: 100%;
-
-}
-
-.zoom:hover .main-img {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-
-}
 
 
 .video-footer-item:first-child {

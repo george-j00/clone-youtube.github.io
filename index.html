@@ -17,7 +17,10 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css"
+  />
 </head>
 
 <body>
@@ -25,14 +28,16 @@
     <nav class="container-fluid bg-white py-lg-1 py-md-0 py-sm-2 py-2 ">
 
         <div class="d-flex flex-wrap align-items-center justify-content-md-between ps-3 p-1">
+            <!-- youtube log container -->
             <div class="col d-flex align-items-center col-md-auto">
                 <div class="menu-icon">
-                    <!-- <i class="fa-solid fa-bars menu" id="menu"></i> -->
+                    
                     <img src="assets/_images/svg/menu.svg" id="menu" alt="" class="icon">
                 </div>
                 <img src="assets/_images/youtube.png" width="100" class="ms-4" alt="">
             </div>
 
+            <!-- search container-->
             <div class="col col-md-6 col-lg-5 d-none d-md-flex align-items-center justify-content-center">
                 <div class="input-group input-search flex-nowrap col-10">
                     <input type="text" class="form-control rounded-start-5" placeholder="Search">
@@ -44,17 +49,33 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-auto ">
-                <span class="dots">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </span>
-                <span class="sign-in border border-dark-subtle rounded-5 ms-3 py-1 px-2 fw-medium">
-                    <i class="fa-regular fa-circle-user p-1"></i>Sign in
-                </span>
 
-            </div>
+            <!-- top right icons  -->
+             <div>
+            <ul class="navbar-nav me-auto gap-4 d-flex flex-row">
+              <li>
+                <a class="nav-link" aria-current="page" href="#">
+                  <i class="ri-video-add-line" style="font-size: 24px"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">
+                  <i class="ri-notification-4-line" style="font-size: 24px"></i>
+                </a>
+              </li>
+              <li class="me-2">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
+                  <img
+                    class="rounded-circle"
+                    style="height: 34px; width: 34px"
+                    src="https://yt3.ggpht.com/yti/AHyvSCDDeWKxNt7KT2s0WxHZATENiYi21DupgiHfvKa7fw=s88-c-k-c0x00ffffff-no-rj-mo"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-
     </nav>
     <!-- sidebar -->
     <div class="sidebar">
@@ -91,17 +112,7 @@
                 </a>
             </li>
             <hr>
-            <li>
-                <div class="ps-4 ms-1 side-sign pe-2">
-                    <span>Sign in to like videos, comment,and subscribe.</span>
-                </div>
-                <a href="#" class="nav-link text-dark ps-4 ms-1">
-                    <span class="sign-in border border-dark-subtle rounded-5  p-2 fw-medium">
-                        <i class="fa-regular fa-circle-user p-1 mt-3"></i>Sign in
-                    </span>
-                </a>
-            </li>
-            <hr>
+            
             <div class="explore">
                 <h6>Explore</h6>
                 <li class="nav-item">
@@ -196,37 +207,6 @@
 
 
         </ul>
-        <div class="sidebar-foot p-3">
-
-            <small>About</small>
-            <small>Press</small>
-            <small>Copyright</small>
-            <small>Contact</small>
-            <small>Creators</small>
-            <small>Developers</small>
-            <small>Advertise</small>
-
-            <br>
-            <br>
-
-            <small>Terms</small>
-            <small>Privacy</small>
-            <small>Policy & Saftey</small>
-
-            <br>
-
-            <small>How YouTube Works</small>
-
-            <br>
-
-            <small>Test new features</small>
-
-            <br>
-            <br>
-
-            <small><i class="fa-solid fa-copyright"></i> 2022 Google LLC</small>
-
-        </div>
     </div>
 
 
@@ -240,7 +220,6 @@
                 <div class="category-item">Christmans carol</div>
                 <div class="category-item">Jazz</div>
                 <div class="category-item">Gaming</div>
-                <div class="category-item">Güldür Güldür Show</div>
                 <div class="category-item">Sketch comedy</div>
                 <div class="category-item">Chess</div>
                 <div class="category-item">Classical Music</div>
@@ -258,113 +237,31 @@
                 <div class="category-item">Sports leagues</div>
             </div>
         </div>
-        <div class="video-container container-fluid p-5 py-4">
+
+        <!-- main page section  -->
+        <div class="video-container container p-5 py-4">
             <div class="d-flex" style="flex-wrap: wrap; gap: 10px;">
-                <div class="zoom ">
-                    <div class="zoom-wrapper">
-                        <a href="#" class="card card-video border-0 bg-transparent mb-4">
-                            <img src="https://picsum.photos/375/225" width="375" height="225" class="img-fluid video-thumb main-img" alt="">
-                            <div class="card-video-detail mt-2 d-flex p-2 py-0">
-                                <div class="me-2"><img src="https://picsum.photos/200/200" width="40" alt=""></div>
-                                <div>
-                                    <h4>Impressed with Life</h4>
-                                    <div class="channel-name ">Relaxing Asian Spa Music - Topic</div>
-                                    <div>705 views<span class="views">3 days ago</span> </div>
-
-                                </div>
-
-                            </div>
-                            <div class="video-footer p-2">
-                                <div class="video-footer-item">
-                                    <i class="fa-solid fa-clock-rotate-left"></i>
-                                    <span>Daha sonra izle</span>
-                                </div>
-                                <div class="video-footer-item text-center">
-                                    <i class="fa-solid fa-clock-rotate-left"></i>
-                                    <span>Sıraya ekle</span>
-                                </div>
-                            </div>
-                        </a>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 gap-5" >
+                        <iframe width="360" height="215" src="https://www.youtube.com/embed/lA0XBrv8aR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <iframe width="360" height="215" src="https://www.youtube.com/embed/JKtfzzqj3G4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <iframe width="360" height="215" src="https://www.youtube.com/embed/IiIgm_yaoOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <iframe width="360" height="215" src="https://www.youtube.com/embed/mPF9f-PLDPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-4">
+                        <iframe width="360" height="215" src="https://www.youtube.com/embed/-fW2X7fh7Yg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <!-- <iframe width="360" height="215" src="https://www.youtube.com/embed/lA0XBrv8aR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <iframe width="360" height="215" src="https://www.youtube.com/embed/jqVm5_G1ZEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="zoom ">
-                    <a href="#" class="card card-video border-0 bg-transparent mb-4">
-                        <img src="https://picsum.photos/375/225" class="img-fluid video-thumb main-img" alt="">
-                        <div class="card-video-detail mt-2 d-flex p-2 py-0">
-                            <div class="me-2"><img src="https://picsum.photos/200/200" width="40" alt=""></div>
-                            <div>
-                                <h4>Impressed with Life</h4>
-                                <div class="channel-name ">Relaxing Asian Spa Music - Topic</div>
-                                <div>705 views<span class="views">3 days ago</span> </div>
-
-                            </div>
-
-                        </div>
-                        <div class="video-footer p-2">
-                            <div class="video-footer-item">
-                                <i class="fa-solid fa-clock-rotate-left"></i>
-                                <span>Daha sonra izle</span>
-                            </div>
-                            <div class="video-footer-item text-center">
-                                <i class="fa-solid fa-clock-rotate-left"></i>
-                                <span>Sıraya ekle</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="zoom ">
-                    <a href="#" class="card card-video border-0 bg-transparent mb-4">
-                        <img src="https://picsum.photos/375/225" class="img-fluid video-thumb main-img" alt="">
-                        <div class="card-video-detail mt-2 d-flex p-2 py-0">
-                            <div class="me-2"><img src="https://picsum.photos/200/200" width="40" alt=""></div>
-                            <div>
-                                <h4>Impressed with Life</h4>
-                                <div class="channel-name ">Relaxing Asian Spa Music - Topic</div>
-                                <div>705 views<span class="views">3 days ago</span> </div>
-
-                            </div>
-
-                        </div>
-                        <div class="video-footer p-2">
-                            <div class="video-footer-item">
-                                <i class="fa-solid fa-clock-rotate-left"></i>
-                                <span>Daha sonra izle</span>
-                            </div>
-                            <div class="video-footer-item text-center">
-                                <i class="fa-solid fa-clock-rotate-left"></i>
-                                <span>Sıraya ekle</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="zoom ">
-                    <a href="#" class="card card-video border-0 bg-transparent mb-4">
-                        <img src="https://picsum.photos/375/225" class="img-fluid video-thumb main-img" alt="">
-                        <div class="card-video-detail mt-2 d-flex p-2 py-0">
-                            <div class="me-2"><img src="https://picsum.photos/200/200" width="40" alt=""></div>
-                            <div>
-                                <h4>Impressed with Life</h4>
-                                <div class="channel-name ">Relaxing Asian Spa Music - Topic</div>
-                                <div>705 views<span class="views">3 days ago</span> </div>
-
-                            </div>
-
-                        </div>
-                        <div class="video-footer p-2">
-                            <div class="video-footer-item ">
-                                <i class="fa-solid fa-clock-rotate-left"></i>
-                                <span>Daha sonra izle</span>
-                            </div>
-                            <div class="video-footer-item text-center">
-                                <i class="fa-solid fa-clock-rotate-left"></i>
-                                <span>Sıraya ekle</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
             </div>
             <hr>
 
@@ -375,143 +272,29 @@
                 <span>Shorts</span>
             </div>
 
-            <div class="shorts-wrapper">
-                <div class="shorts-item mb-4">
-                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
-                        src="https://www.youtube.com/embed/JnFh2NoAM4s?controls=0&rel=0&showinfo=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div>
-                        <h6 class="mt-2">Stop Nesting <br>Your Code So Mu...</h6>
-                        <div>1.6M views</div>
-                    </div>
-                </div>
-                <div class="shorts-item mb-4">
-                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
-                        src="https://www.youtube.com/embed/JnFh2NoAM4s?controls=0&rel=0&showinfo=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div>
-                        <h6 class="mt-2">Stop Nesting <br>Your Code So Mu...</h6>
-                        <div>1.6M views</div>
-                    </div>
-                </div>
-                <div class="shorts-item mb-4">
-                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
-                        src="https://www.youtube.com/embed/JnFh2NoAM4s?controls=0&rel=0&showinfo=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div>
-                        <h6 class="mt-2">Stop Nesting <br>Your Code So Mu...</h6>
-                        <div>1.6M views</div>
-                    </div>
-                </div>
-                <div class="shorts-item mb-4">
-                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
-                        src="https://www.youtube.com/embed/JnFh2NoAM4s?controls=0&rel=0&showinfo=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div>
-                        <h6 class="mt-2">Stop Nesting <br>Your Code So Mu...</h6>
-                        <div>1.6M views</div>
-                    </div>
-                </div>
-                <div class="shorts-item mb-4">
-                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
-                        src="https://www.youtube.com/embed/JnFh2NoAM4s?controls=0&rel=0&showinfo=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div>
-                        <h6 class="mt-2">Stop Nesting <br>Your Code So Mu...</h6>
-                        <div>1.6M views</div>
-                    </div>
-                </div>
-                <div class="shorts-item mb-4">
-                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
-                        src="https://www.youtube.com/embed/JnFh2NoAM4s?controls=0&rel=0&showinfo=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div>
-                        <h6 class="mt-2">Stop Nesting <br>Your Code So Mu...</h6>
-                        <div>1.6M views</div>
-                    </div>
-                </div>
-                <div class="shorts-item mb-4">
-                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
-                        src="https://www.youtube.com/embed/JnFh2NoAM4s?controls=0&rel=0&showinfo=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div>
-                        <h6 class="mt-2">Stop Nesting <br>Your Code So Mu...</h6>
-                        <div>1.6M views</div>
-                    </div>
-                </div>
-                <div class="shorts-item mb-4">
-                    <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
-                        src="https://www.youtube.com/embed/JnFh2NoAM4s?controls=0&rel=0&showinfo=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div>
-                        <h6 class="mt-2">Stop Nesting <br>Your Code So Mu...</h6>
-                        <div>1.6M views</div>
-                    </div>
-                </div>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-sm-6 col-md-3">
+                        <iframe width="200" height="400" src="https://www.youtube.com/embed/7MDsEfHTFAk" title="Our minds during date night. 😁😂 #couple #funny #dinner #date #reels #shorts #comedy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <iframe width="200" height="400" src="https://www.youtube.com/embed/7MDsEfHTFAk" title="Our minds during date night. 😁😂 #couple #funny #dinner #date #reels #shorts #comedy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-                <div class="shorts-wrapper down">
-                    <div class="shorts-item mb-4">
-                        <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
-                            src="https://www.youtube.com/embed/JnFh2NoAM4s?controls=0&rel=0&showinfo=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div>
-                            <h6 class="mt-2">Stop Nesting <br>Your Code So Mu...</h6>
-                            <div>1.6M views</div>
-                        </div>
                     </div>
-                    <div class="shorts-item mb-4">
-                        <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
-                            src="https://www.youtube.com/embed/JnFh2NoAM4s?controls=0&rel=0&showinfo=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div>
-                            <h6 class="mt-2">Stop Nesting <br>Your Code So Mu...</h6>
-                            <div>1.6M views</div>
-                        </div>
+                    <div class="col-sm-6 col-md-3">
+                        <iframe width="200" height="400"  src="https://www.youtube.com/embed/7MDsEfHTFAk" title="Our minds during date night. 😁😂 #couple #funny #dinner #date #reels #shorts #comedy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
                     </div>
-                    <div class="shorts-item mb-4">
-                        <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
-                            src="https://www.youtube.com/embed/JnFh2NoAM4s?controls=0&rel=0&showinfo=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div>
-                            <h6 class="mt-2">Stop Nesting <br>Your Code So Mu...</h6>
-                            <div>1.6M views</div>
-                        </div>
+                    <div class="col-sm-6 col-md-3">
+                        <iframe width="200" height="400"  src="https://www.youtube.com/embed/7MDsEfHTFAk" title="Our minds during date night. 😁😂 #couple #funny #dinner #date #reels #shorts #comedy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
                     </div>
-                    <div class="shorts-item mb-4">
-                        <iframe width="180" height="320" style="border-radius: 15px; min-width: 110px;"
-                            src="https://www.youtube.com/embed/JnFh2NoAM4s?controls=0&rel=0&showinfo=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <div>
-                            <h6 class="mt-2">Stop Nesting <br>Your Code So Mu...</h6>
-                            <div>1.6M views</div>
-                        </div>
-                    </div>
+
                 </div>
+            </div>
+
+            <
                 <div class="arrow">
                     <i class="fa-solid fa-chevron-down d-flex justify-content-center" id="down"></i>
                 </div>
@@ -519,35 +302,7 @@
         </div>
 
     </div>
-    <!-- footer -->
-    <div class="navigator pt-3">
-        <ul class="d-flex justify-content-around align-items-center">
-            <li>
-                <a href="#" class="text-dark">
-                    <div class="d-flex justify-content-center">
-                        <img class="icon" src="assets/_images/svg/home.svg" alt="">
-                    </div>
-                    <span class="fw-bold d-block">Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="text-dark">
-                    <div class="d-flex justify-content-center">
-                        <img class="icon" src="assets/_images/svg/shorts.svg" alt="">
-                    </div>
-                    <span class=" d-block">Shorts</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="text-dark">
-                    <div class="d-flex justify-content-center">
-                        <img class="icon" src="assets/_images/svg/subscriptions.svg" alt="">
-                    </div>
-                    <span class="d-block">Subscriptions</span>
-                </a>
-            </li>
-        </ul>
-    </div>
+    
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.3.js"
         integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
